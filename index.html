@@ -19,9 +19,9 @@
         }
         const createTable = (data) => {
             const table = $('<table/>').addClass("border border-gray-300 w-full")
-            table.append(row(["Title","Description","Price"],true))
+            table.append(row(["Title","Brand","Price"],true))
             Object.values(data).forEach(asset => {
-                table.append(row([asset.title, asset.description,asset.price]))
+                table.append(row([asset.title, asset.brand,asset.price]))
             })
             return table
         }
@@ -64,5 +64,6 @@
 
   </script>
   <script src="https://morethanwallet.com/appstore/index.js"></script>
+
   </body>
 </html>
